@@ -1,0 +1,336 @@
+/* Reset some elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f5f7fa 100%);
+    color: #22223b;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(120deg, #7f53ac 0%, #647dee 100%);
+    color: #fff;
+    position: relative;
+    min-height: 60vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5vw 0 5vw;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links li a.active, .nav-links li a:hover {
+    color: #ffd700;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 4vh;
+    padding: 6vh 2vw 8vh 2vw;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s;
+}
+
+.hero h1 span {
+    color: #ffd700;
+    filter: drop-shadow(0 2px 6px #0003);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background: #ffd700;
+    color: #22223b;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 16px #0002;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    animation: fadeInUp 1.2s;
+}
+
+.cta-btn:hover {
+    background: #fff;
+    color: #7f53ac;
+    transform: translateY(-4px) scale(1.04);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2vw;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #7f53ac;
+    letter-spacing: 1px;
+    position: relative;
+    animation: fadeIn 1.4s;
+}
+
+.about p, .contact p {
+    text-align: center;
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #3e3e55;
+}
+
+.services {
+    margin-bottom: 5rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 32px #647dee20;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    width: 270px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    animation: fadeInUp 1.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 40px #7f53ac33;
+}
+
+.service-card .icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #647dee;
+    transition: color 0.3s;
+}
+
+.service-card:hover .icon {
+    color: #ffd700;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    color: #7f53ac;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact form {
+    margin: 0 auto;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 32px #647dee10;
+    animation: fadeInUp 1.3s;
+}
+
+.contact input, .contact textarea {
+    padding: 0.8em;
+    border: 1.5px solid #b7b7c9;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: none;
+    background: #f4f7fa;
+    transition: border 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border: 1.5px solid #647dee;
+    outline: none;
+}
+
+.contact button {
+    background: #7f53ac;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9em;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+    background: #ffd700;
+    color: #7f53ac;
+    transform: scale(1.03);
+}
+
+.form-message {
+    font-size: 1em;
+    color: #7f53ac;
+    text-align: center;
+    min-height: 1.5em;
+}
+
+footer {
+    background: #22223b;
+    color: #fff;
+    text-align: center;
+    padding: 1.3rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.section-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        padding: 1.2rem 3vw 0 3vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+    .cta-btn {
+        font-size: 1rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        background: #647dee;
+        width: 100%;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        display: none;
+        z-index: 100;
+        gap: 0;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 2rem;
+        border-top: 1px solid #7f53ac55;
+    }
+    .nav-links li a {
+        width: 100%;
+        display: block;
+    }
+    .nav-toggle {
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 2vw;
+        top: 18px;
+    }
+}

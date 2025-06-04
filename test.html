@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny | Your Future, Our Passion</title>
+    <link rel="stylesheet" href="test.css">
+    <!-- Google Fonts for style -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Destiny</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">&#9776;</div>
+        </nav>
+        <section class="hero" id="home">
+            <h1>Welcome to <span>Destiny</span></h1>
+            <p>Your Future, Our Passion</p>
+            <a href="#services" class="cta-btn">Our Services</a>
+        </section>
+    </header>
+    <main>
+        <section class="about section-animate" id="about">
+            <h2>About Us</h2>
+            <p>Destiny is a creative business agency, transforming visions into reality. We empower brands, startups, and entrepreneurs by providing innovative solutions and strategic guidance for a successful future.</p>
+        </section>
+        <section class="services section-animate" id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <div class="icon">&#128640;</div>
+                    <h3>Brand Strategy</h3>
+                    <p>Crafting strong brand identities and positioning for impact.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">&#128187;</div>
+                    <h3>Web Development</h3>
+                    <p>Building modern, responsive websites to showcase your vision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">&#128161;</div>
+                    <h3>Creative Design</h3>
+                    <p>Designing unique visuals and experiences that captivate audiences.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact section-animate" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Destiny. All rights reserved.</p>
+    </footer>
+    <script src="test.js"></script>
+</body>
+</html>
